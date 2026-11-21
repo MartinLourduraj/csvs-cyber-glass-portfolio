@@ -95,7 +95,7 @@ csvs-cyber-glass-portfolio/
 │   │   ├── ExperienceSection.tsx# Chronological timeline with glowing nodes
 │   │   ├── CSVSStartupSection.tsx# "Building Tomorrow with CSVS IT Tech" showcase
 │   │   ├── AchievementsSection.tsx# Verified governance & architecture badges
-│   │   ├── ContactSection.tsx  # 256-bit encrypted glass contact terminal
+│   │   ├── ContactSection.tsx  # Direct verified glass contact terminal
 │   │   └── Footer.tsx          # Animated glass footer with back-to-top
 │   ├── styles/
 │   │   └── index.css           # Glass tokens, theme variables, scanlines
