@@ -7,7 +7,8 @@ export function useTheme() {
     if (saved && ['cyber-blue', 'crimson-red', 'fusion', 'midnight-black'].includes(saved)) {
       return saved as ThemeMode;
     }
-    return 'cyber-blue';
+    // Default appearance for new visitors: Blue x Red Fusion
+    return 'fusion';
   });
 
   useEffect(() => {

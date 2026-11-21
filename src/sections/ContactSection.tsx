@@ -100,12 +100,12 @@ export const ContactSection: React.FC = () => {
           honeypot: '',
         });
       } else {
-        setStatus('success');
-        setStatusMessage('Inquiry logged successfully. Martin Lourduraj / CSVS IT Tech has received your direct transmission.');
+        setStatus('error');
+        setStatusMessage(json?.error || 'Unable to transmit inquiry. Please reach out directly to contact@csvsittech.in.');
       }
     } catch (err) {
-      setStatus('success');
-      setStatusMessage('Inquiry received. Transmission sent to contact@csvsittech.in.');
+      setStatus('error');
+      setStatusMessage('Network transmission error. Please reach out directly to contact@csvsittech.in.');
     }
   };
 
@@ -209,10 +209,10 @@ export const ContactSection: React.FC = () => {
               <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-6">
                 <div className="flex items-center gap-2 text-xs font-mono text-[#FF1744]">
                   <Send className="w-4 h-4 text-[#FF1744]" />
-                  <span>SECURE FORM TERMINAL</span>
+                  <span>TRANSMISSION TERMINAL</span>
                 </div>
                 <span className="text-[10px] font-mono text-emerald-400 flex items-center gap-1">
-                  <ShieldCheck className="w-3 h-3" /> 256-BIT ENCRYPTED
+                  <ShieldCheck className="w-3 h-3" /> VERIFIED CHANNEL
                 </span>
               </div>
 
