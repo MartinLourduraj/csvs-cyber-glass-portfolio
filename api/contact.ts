@@ -9,7 +9,15 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const { name, email, subject, projectType, message, honeypot } = req.body || {};
+    let payload = req.body;
+    if (typeof payload === 'string') {
+      try {
+        payload = JSON.parse(payload);
+      } catch {
+        payload = {};
+      }
+    }
+    const { name, email, subject, projectType, message, honeypot } = payload || {};
 
     // 1. Anti-bot honeypot check (hidden field)
     if (honeypot) {
