@@ -1,4 +1,4 @@
-import { ProjectItem, SkillItem, TimelineMilestone, AchievementItem, GitHubRepoData } from '../types';
+import { ProjectItem, SkillItem, TimelineMilestone, AchievementItem, GitHubRepoData, SpecializationItem } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Martin Lourduraj",
@@ -16,6 +16,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/MartinLourduraj",
   githubUsername: "MartinLourduraj",
   linkedin: "https://www.linkedin.com/in/martin-lourduraj",
+  photoUrl: "/images/martin-lourduraj.webp",
   availability: "Available for Strategic Architectural Projects & Enterprise Solutions",
   isAvailable: true,
   rotatingTitles: [
@@ -376,4 +377,103 @@ export const GITHUB_REPOS_CACHE: GitHubRepoData[] = [
     updatedAt: "2024-11",
     topics: ["chrome-extension", "cyberpunk", "theme", "github-profile"]
   }
+];
+
+// ROW 1: Frontend Technologies Marquee (Right to Left)
+export const ROW1_FRONTEND_TECH = [
+  { name: "React 18", category: "Framework", iconName: "Atom" },
+  { name: "TypeScript", category: "Language", iconName: "Code2" },
+  { name: "JavaScript (ESNext)", category: "Core", iconName: "FileCode" },
+  { name: "Tailwind CSS", category: "Styling", iconName: "Palette" },
+  { name: "HTML5 Semantic", category: "Web", iconName: "Layout" },
+  { name: "CSS3 3D Transforms", category: "Animation", iconName: "Layers" },
+  { name: "Vite Bundler", category: "Tooling", iconName: "Zap" },
+  { name: "Remix / SSR", category: "Full-Stack", iconName: "Globe" },
+];
+
+// ROW 2: Backend & Database Marquee (Left to Right)
+export const ROW2_BACKEND_TECH = [
+  { name: "Python 3", category: "Core Backend", iconName: "Terminal" },
+  { name: "Django ERP", category: "Framework", iconName: "Server" },
+  { name: "PostgreSQL", category: "Relational DB", iconName: "Database" },
+  { name: "MySQL", category: "Relational DB", iconName: "HardDrive" },
+  { name: "REST APIs", category: "Integration", iconName: "Network" },
+  { name: "Redis Cache", category: "In-Memory", iconName: "Zap" },
+  { name: "Celery Workers", category: "Task Queue", iconName: "Cpu" },
+  { name: "Node.js Services", category: "Runtime", iconName: "Activity" },
+];
+
+// ROW 3: Cloud & DevOps Marquee (Slow Right to Left)
+export const ROW3_CLOUD_TECH = [
+  { name: "AWS Cloud", category: "Infrastructure", iconName: "Cloud" },
+  { name: "Linux Systems", category: "OS / Kernel", iconName: "Terminal" },
+  { name: "Docker Containers", category: "Containerization", iconName: "Box" },
+  { name: "Vercel Edge", category: "Deployment", iconName: "Globe" },
+  { name: "Git VCS", category: "Version Control", iconName: "GitBranch" },
+  { name: "GitHub Actions", category: "CI / CD", iconName: "Shield" },
+  { name: "Nginx Reverse Proxy", category: "Web Server", iconName: "Server" },
+];
+
+// ROW 5: Specializations (6 Specialized Domains)
+export const SPECIALIZATIONS_DATA: SpecializationItem[] = [
+  {
+    id: "full-stack",
+    title: "Full-Stack Development",
+    tagline: "End-to-End Reactive Systems",
+    description: "Architecting synchronized TypeScript and Python architectures from fluid client-side glassmorphism to robust relational database persistence.",
+    technologies: ["React", "TypeScript", "Python", "Tailwind CSS"],
+    metric: "Strict Type Safety",
+    iconName: "Code2",
+    accent: "blue",
+  },
+  {
+    id: "healthcare-erp",
+    title: "Healthcare ERP",
+    tagline: "Clinical Hospital Automation",
+    description: "Mission-critical hospital management (IP/OP, LIMS, PACS/DICOM, and pharmacy) with 100% sovereign data and zero PHI external leakage.",
+    technologies: ["CSVS Nova HMS", "Django", "PostgreSQL", "LIMS"],
+    metric: "14+ Hospital Modules",
+    iconName: "Activity",
+    accent: "red",
+  },
+  {
+    id: "enterprise-architecture",
+    title: "Enterprise Architecture",
+    tagline: "Fault-Tolerant Distributed Core",
+    description: "Designing zero-trust enterprise boundaries, role-based access security, high-throughput audit ledgers, and institutional resilience.",
+    technologies: ["Zero-Trust", "Docker", "Microservices", "RBAC"],
+    metric: "99.9% Uptime Design",
+    iconName: "Server",
+    accent: "cyan",
+  },
+  {
+    id: "cloud-infrastructure",
+    title: "Cloud Infrastructure",
+    tagline: "Resilient AWS & Linux Clusters",
+    description: "Automated provisioning of hardened Linux environments, VPC security groups, multi-region replication, and edge serverless delivery.",
+    technologies: ["AWS", "Linux", "Nginx", "Vercel"],
+    metric: "Zero Single Point of Failure",
+    iconName: "Cloud",
+    accent: "blue",
+  },
+  {
+    id: "automation",
+    title: "Automation",
+    tagline: "Autonomous Event Pipelines",
+    description: "Automating repetitive clinical workflows, lab analyzer ingestion, pharmacy stock deduction, and real-time operational notifications.",
+    technologies: ["Celery", "Redis", "Webhooks", "Event Streams"],
+    metric: "Real-Time Telemetry",
+    iconName: "Cpu",
+    accent: "red",
+  },
+  {
+    id: "software-engineering",
+    title: "Software Engineering",
+    tagline: "Clean, Maintainable Craftsmanship",
+    description: "Commitment to strict code quality, modular component patterns, comprehensive API documentation, and verified open-source impact.",
+    technologies: ["Git", "GitHub", "REST APIs", "Clean Architecture"],
+    metric: "Production-Grade Code",
+    iconName: "Terminal",
+    accent: "cyan",
+  },
 ];

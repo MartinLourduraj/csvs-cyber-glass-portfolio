@@ -5,6 +5,7 @@ import { CyberBackground } from './components/CyberBackground';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './sections/HeroSection';
 import { AboutSection } from './sections/AboutSection';
+import { SpecializationsRow } from './components/SpecializationsRow';
 import { SkillsSection } from './sections/SkillsSection';
 import { ProjectsSection } from './sections/ProjectsSection';
 import { GitHubSection } from './sections/GitHubSection';
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
   const sectionIds = [
     'hero',
     'about',
+    'specializations',
     'skills',
     'projects',
     'experience',
@@ -41,16 +43,36 @@ export const App: React.FC = () => {
         onThemeChange={setTheme}
       />
 
-      {/* Main Content Sections */}
-      <main className="relative z-10 flex flex-col space-y-8 sm:space-y-16">
+      {/* Main Content Sections with All 6 Animated Rows */}
+      <main className="relative z-10 flex flex-col space-y-6 sm:space-y-12">
+        {/* HERO SECTION + ROW 1 (Frontend), ROW 2 (Backend), ROW 3 (Cloud) */}
         <HeroSection />
+
+        {/* ABOUT SECTION with Martin's Real Portrait & Sovereign Philosophy */}
         <AboutSection />
+
+        {/* ROW 5 — SPECIALIZATIONS (6 Animated Transparent Cards) */}
+        <SpecializationsRow />
+
+        {/* SKILLS SECTION with Category Deep-Dive */}
         <SkillsSection />
+
+        {/* PROJECTS SECTION + ROW 4 (Featured Projects Drag/Scroll Carousel) */}
         <ProjectsSection />
+
+        {/* LIVE GITHUB INTEGRATION */}
         <GitHubSection />
+
+        {/* EXPERIENCE SECTION + ROW 6 (Horizontal Journey Timeline) */}
         <ExperienceSection />
+
+        {/* CSVS IT TECH STARTUP SHOWCASE */}
         <CSVSStartupSection />
+
+        {/* ARCHITECTURAL ACHIEVEMENTS */}
         <AchievementsSection />
+
+        {/* SECURE CONTACT FORM */}
         <ContactSection />
       </main>
 

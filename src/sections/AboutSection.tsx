@@ -1,21 +1,20 @@
 import React from 'react';
 import { 
-  User, 
+  Building2, 
+  MapPin, 
+  Lock, 
   ShieldAlert, 
   Cpu, 
   Cloud, 
   Activity, 
-  Lightbulb, 
-  MapPin, 
-  Building2, 
-  ArrowUpRight,
-  Database,
-  Lock,
-  Layers,
-  Sparkles
+  Database, 
+  Sparkles,
+  Award,
+  ArrowUpRight
 } from 'lucide-react';
 import { SectionHeader } from '../components/SectionHeader';
 import { GlassCard } from '../components/GlassCard';
+import { PersonalPhoto } from '../components/PersonalPhoto';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 export const AboutSection: React.FC = () => {
@@ -31,44 +30,62 @@ export const AboutSection: React.FC = () => {
           color="fusion"
         />
 
-        {/* Bento Grid Layout (Bento Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
+        {/* Bento Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
           
-          {/* CARD 1: Executive Founder & Philosophy (8 cols lg) */}
+          {/* CARD 1: Executive Founder Profile & Personal Portrait (8 cols lg) */}
           <GlassCard variant="blue" className="lg:col-span-8 p-6 sm:p-8 flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-5">
+              {/* Top Badge */}
+              <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-6">
                 <div className="flex items-center gap-2 text-xs font-mono text-[#00D9FF]">
                   <Building2 className="w-4 h-4 text-[#00D9FF]" />
                   <span>FOUNDER & ARCHITECT PROFILE</span>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#008CFF]/20 text-[#00D9FF] border border-[#00D9FF]/30">
+                <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-[#008CFF]/20 text-[#00D9FF] border border-[#00D9FF]/40 font-semibold">
                   CSVS IT TECH
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-extrabold font-display text-white mb-4">
-                Pioneering Sovereign Healthcare ERP & Cloud Systems
-              </h3>
+              {/* Flex Container with Portrait & Biography */}
+              <div className="flex flex-col md:flex-row gap-6 lg:gap-8 items-center md:items-start mb-6">
+                {/* Personal Portrait in Compact Glass Frame */}
+                <div className="shrink-0 flex justify-center">
+                  <PersonalPhoto 
+                    size="md" 
+                    showBadges={false} 
+                    showRings={true} 
+                    showScanline={true} 
+                  />
+                </div>
 
-              <div className="space-y-3.5 text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
-                <p>
-                  I am <strong>Martin Lourduraj</strong>, Founder and Full-Stack Architect at <strong>CSVS IT Tech</strong> based in Tamil Nadu, India. Over years of hands-on software development, I have focused on solving high-stakes enterprise problems—specifically building hospital management systems (HMS), clinical lab pipelines, and high-concurrency cloud infrastructure that medical professionals rely on around the clock.
-                </p>
-                <p>
-                  My engineering philosophy is built on <span className="text-[#00D9FF] font-semibold">uncompromising resilience and absolute data sovereignty</span>. In healthcare technology, downtime is unacceptable and patient privacy is non-negotiable. I architect software with isolated enterprise boundaries so medical institutions maintain 100% control over their clinical records, diagnostic tests, and financial ledgers.
-                </p>
+                {/* Biography Text */}
+                <div className="space-y-3.5 text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+                  <h3 className="text-2xl font-extrabold font-display text-white">
+                    Martin Lourduraj
+                  </h3>
+                  <div className="text-xs font-mono text-[#00D9FF] font-semibold">
+                    Founder & Full-Stack Architect · CSVS IT Tech
+                  </div>
+                  <p>
+                    I am an engineer and technology entrepreneur based in Tamil Nadu, India. Over years of hands-on software development, I have focused on solving high-stakes enterprise problems—specifically building hospital management systems (HMS), clinical laboratory pipelines, and high-concurrency cloud infrastructure that medical professionals rely on around the clock.
+                  </p>
+                  <p>
+                    My engineering philosophy is built on <span className="text-[#00D9FF] font-semibold">uncompromising resilience and absolute data sovereignty</span>. In healthcare technology, downtime is unacceptable and patient privacy is non-negotiable. I architect software with isolated enterprise boundaries so medical institutions maintain 100% control over their clinical records, diagnostic tests, and financial ledgers.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="pt-6 mt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+            {/* Bottom Meta Row */}
+            <div className="pt-6 mt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#008CFF]/20 border border-[#00D9FF]/40 flex items-center justify-center text-[#00D9FF]">
+                <div className="w-10 h-10 rounded-xl bg-[#008CFF]/20 border border-[#00D9FF]/40 flex items-center justify-center text-[#00D9FF] shrink-0">
                   <Lock className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs font-mono font-bold text-white">Zero-Data Leakage Doctrine</div>
-                  <div className="text-[11px] text-slate-400">No public AI training on patient records</div>
+                  <div className="text-[11px] text-slate-400">Zero external AI model training on patient records</div>
                 </div>
               </div>
 
@@ -100,85 +117,71 @@ export const AboutSection: React.FC = () => {
                 From emergency room triage and in-patient bed management to laboratory analyzer automation and multi-counter billing, I engineer architectures capable of processing intense hospital load without bottlenecks.
               </p>
 
-              <div className="space-y-2 text-xs font-mono">
-                <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-white/5">
-                  <span className="text-slate-400">Clinical LIMS:</span>
-                  <span className="text-[#FF1744] font-semibold">Analyzer Serial Protocol</span>
+              <div className="space-y-2 py-3 border-y border-white/10 text-xs font-mono text-slate-300">
+                <div className="flex items-center justify-between">
+                  <span>Out-Patient (OP) & In-Patient (IP)</span>
+                  <span className="text-[#00D9FF]">Verified</span>
                 </div>
-                <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-white/5">
-                  <span className="text-slate-400">Imaging Standard:</span>
-                  <span className="text-white font-semibold">PACS / DICOM Feeds</span>
+                <div className="flex items-center justify-between">
+                  <span>Diagnostic Lab LIMS Protocols</span>
+                  <span className="text-[#00D9FF]">Integrated</span>
                 </div>
-                <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-white/5">
-                  <span className="text-slate-400">Dispensary:</span>
-                  <span className="text-[#00D9FF] font-semibold">Real-Time Stock Sync</span>
+                <div className="flex items-center justify-between">
+                  <span>PACS / DICOM Imaging Handlers</span>
+                  <span className="text-[#FF1744]">Standards</span>
                 </div>
               </div>
             </div>
 
-            <div className="pt-4 mt-4 border-t border-white/10 text-[11px] font-mono text-slate-400 flex items-center justify-between">
-              <span>Standard: HIPAA-Grade Security</span>
-              <span className="text-emerald-400 font-bold">100% SOVEREIGN</span>
+            <div className="pt-4 flex items-center justify-between text-xs font-mono text-slate-400">
+              <span>Flagship: CSVS Nova HMS</span>
+              <a href="https://csvsittech.in" target="_blank" rel="noopener noreferrer" className="text-[#00D9FF] hover:underline flex items-center gap-1">
+                csvsittech.in <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
             </div>
           </GlassCard>
 
-          {/* CARD 3: Full-Stack Engineering Architecture (4 cols lg) */}
-          <GlassCard variant="default" className="lg:col-span-4 p-6 sm:p-7">
-            <div className="w-10 h-10 rounded-xl bg-[#008CFF]/20 border border-[#00D9FF]/40 flex items-center justify-center text-[#00D9FF] mb-4">
-              <Cpu className="w-5 h-5" />
+          {/* CARD 3: High-Availability Cloud & Infrastructure (6 cols lg) */}
+          <GlassCard variant="blue" className="lg:col-span-6 p-6 sm:p-7 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-mono text-[#00D9FF] mb-3">
+                <Cloud className="w-4 h-4 text-[#00D9FF]" />
+                <span>INFRASTRUCTURE ARCHITECTURE</span>
+              </div>
+              <h4 className="text-lg sm:text-xl font-bold font-display text-white mb-2">
+                Hardened AWS, Linux & Zero-Downtime Replication
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                Deployment topologies engineered with multi-AZ standby nodes, encrypted EBS volumes, hardened Ubuntu server runtimes, and reverse-proxy caching with Nginx.
+              </p>
             </div>
-            <h4 className="text-lg sm:text-xl font-bold font-display text-white mb-2">
-              Full-Stack Engineering
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans mb-4">
-              Mastery across modern frontend ecosystems (React, TypeScript, Tailwind CSS, Remix) paired with high-performance backends in Python (Django) and relational databases (PostgreSQL).
-            </p>
-            <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-              {['TypeScript', 'React', 'Python', 'Django', 'PostgreSQL', 'REST'].map((t) => (
-                <span key={t} className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-slate-300">
-                  {t}
-                </span>
-              ))}
-            </div>
-          </GlassCard>
-
-          {/* CARD 4: Cloud Infrastructure & DevOps (4 cols lg) */}
-          <GlassCard variant="default" className="lg:col-span-4 p-6 sm:p-7">
-            <div className="w-10 h-10 rounded-xl bg-[#FF1744]/20 border border-[#FF1744]/40 flex items-center justify-center text-[#FF1744] mb-4">
-              <Cloud className="w-5 h-5" />
-            </div>
-            <h4 className="text-lg sm:text-xl font-bold font-display text-white mb-2">
-              Resilient Cloud & DevOps
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans mb-4">
-              Multi-tier architectures deployed on AWS, Linux, and Docker containers with reverse proxying via Nginx, automated SSL/TLS maintenance, and automated database backups.
-            </p>
-            <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-              {['AWS EC2/S3', 'Docker', 'Linux', 'Nginx', 'Vercel', 'CI/CD'].map((t) => (
-                <span key={t} className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-slate-300">
-                  {t}
-                </span>
-              ))}
+            <div className="flex flex-wrap gap-2 pt-4 border-t border-white/10 text-[11px] font-mono text-slate-300">
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">AWS EC2 / S3 / RDS</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">PostgreSQL ACID</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">Redis In-Memory</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">Docker Isolated</span>
             </div>
           </GlassCard>
 
-          {/* CARD 5: Enterprise Automation & Innovation (4 cols lg) */}
-          <GlassCard variant="fusion" className="lg:col-span-4 p-6 sm:p-7">
-            <div className="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-400/40 flex items-center justify-center text-purple-300 mb-4">
-              <Activity className="w-5 h-5" />
+          {/* CARD 4: Reactive Frontend & Modern UI Engineering (6 cols lg) */}
+          <GlassCard variant="red" className="lg:col-span-6 p-6 sm:p-7 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-mono text-[#FF1744] mb-3">
+                <Cpu className="w-4 h-4 text-[#FF1744]" />
+                <span>FRONTEND CRAFTSMANSHIP</span>
+              </div>
+              <h4 className="text-lg sm:text-xl font-bold font-display text-white mb-2">
+                Cybernetic Glass Interfaces & Fluid Type Safety
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                Crafting interfaces that feel alive without compromising performance. Strict TypeScript types, accessible design systems, GPU-accelerated micro-interactions, and instant sub-100ms response times.
+              </p>
             </div>
-            <h4 className="text-lg sm:text-xl font-bold font-display text-white mb-2">
-              Automation & Nova AI
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans mb-4">
-              Custom asynchronous task pipelines (Celery/Redis) that eliminate manual operational bottlenecks: automated prescription alerts, discharge summaries, and stock alerts.
-            </p>
-            <div className="flex flex-wrap gap-1.5 font-mono text-[10px]">
-              {['Nova AI', 'Celery', 'Redis', 'NLP Summaries', 'Event Queues'].map((t) => (
-                <span key={t} className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-slate-300">
-                  {t}
-                </span>
-              ))}
+            <div className="flex flex-wrap gap-2 pt-4 border-t border-white/10 text-[11px] font-mono text-slate-300">
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">React 18 Concurrent</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">TypeScript Strict</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">Tailwind Design Tokens</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10">Liquid Glassmorphism</span>
             </div>
           </GlassCard>
 

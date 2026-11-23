@@ -21,9 +21,10 @@ interface NavbarProps {
 const NAV_LINKS = [
   { id: 'hero', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'specializations', label: 'Specializations' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
-  { id: 'experience', label: 'Experience' },
+  { id: 'experience', label: 'Journey' },
   { id: 'csvs-tech', label: 'CSVS IT Tech' },
   { id: 'contact', label: 'Contact' },
 ];

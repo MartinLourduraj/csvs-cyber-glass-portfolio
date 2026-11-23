@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://martin-lourduraj.vercel.app/sitemap.xml
+Sitemap: https://martinlourduraj.vercel.app/sitemap.xml

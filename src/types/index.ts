@@ -58,3 +58,14 @@ export interface GitHubRepoData {
   updatedAt: string;
   topics: string[];
 }
+
+export interface SpecializationItem {
+  id: string;
+  title: string;
+  tagline: string;
+  description: string;
+  technologies: string[];
+  metric: string;
+  iconName: string;
+  accent: 'blue' | 'red' | 'cyan';
+}
