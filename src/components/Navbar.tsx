@@ -4,7 +4,8 @@ import {
   X, 
   ExternalLink,
   ShieldCheck,
-  ChevronRight
+  ChevronRight,
+  RotateCcw
 } from 'lucide-react';
 import { ISTClock } from './ISTClock';
 import { ThemeToggle } from './ThemeToggle';
@@ -16,6 +17,7 @@ interface NavbarProps {
   activeSection: string;
   theme: ThemeMode;
   onThemeChange: (theme: ThemeMode) => void;
+  onReplayIntro?: () => void;
 }
 
 const NAV_LINKS = [
@@ -33,6 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeSection,
   theme,
   onThemeChange,
+  onReplayIntro,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -128,6 +131,18 @@ export const Navbar: React.FC<NavbarProps> = ({
               <ISTClock />
             </div>
 
+            {/* Reactivate NOVEA Cinematic Intro Button */}
+            {onReplayIntro && (
+              <button
+                onClick={onReplayIntro}
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#008CFF]/20 to-[#FF1744]/20 border border-[#00D9FF]/40 hover:border-[#00D9FF] text-xs font-mono text-[#00D9FF] hover:text-white transition-all shadow-sm"
+                title="Replay NOVEA Cinematic Introduction"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span className="hidden xl:inline">Reactivate NOVEA</span>
+              </button>
+            )}
+
             {/* GitHub Profile Link */}
             <a
               href={PERSONAL_INFO.github}
@@ -190,6 +205,20 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Bottom Mobile Drawer Meta */}
           <div className="pt-6 border-t border-white/10 space-y-3">
+            {/* Replay Intro in Mobile */}
+            {onReplayIntro && (
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onReplayIntro();
+                }}
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-gradient-to-r from-[#008CFF]/20 to-[#FF1744]/20 border border-[#00D9FF]/40 text-sm font-mono font-bold text-[#00D9FF] hover:text-white"
+              >
+                <RotateCcw className="w-4 h-4" />
+                <span>Reactivate NOVEA Cinematic Intro</span>
+              </button>
+            )}
+
             <div className="flex items-center justify-between text-xs text-slate-400 font-mono">
               <span className="flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#00D9FF]" />

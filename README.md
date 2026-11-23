@@ -1,7 +1,7 @@
-# MARTIN LOURDURAJ — CSVS CYBER GLASS PORTFOLIO V2.0
+# MARTIN'S WORLD V3.0 — NOVEA AI & CINEMATIC PORTFOLIO ACTIVATION
 
 > **"Engineering the Future. Building Beyond Boundaries."**  
-> Complete, production-grade, futuristic personal portfolio website for **Martin Lourduraj**, Founder & Full-Stack Architect at **CSVS IT Tech**.
+> Complete, production-grade, cinematic superhero-inspired portfolio for **Martin Lourduraj**, Founder & Full-Stack Architect at **CSVS IT Tech**.
 
 **Live Production Domains:**
 - Primary URL: [https://martinlourduraj.vercel.app/](https://martinlourduraj.vercel.app/)
@@ -10,140 +10,111 @@
 
 ---
 
-## 🌟 Visual Architecture & Cyber Glass V2.0 Design System
+## 🌟 What's New in V3.0 — Martin's World & NOVEA AI
 
-The portfolio features a high-performance cybernetic glassmorphism aesthetic:
-- **Colour Palette:**
-  - Midnight Background: `#050B18`
-  - Deep Navy Surfaces: `#071426`
-  - Electric Blue Energy: `#008CFF`
-  - Neon Cyan Highlights: `#00D9FF`
-  - Crimson Red Accents: `#FF1744`
-  - Ice White Typography: `#F1F5F9`
-- **Real Personal Portrait Component:** High-resolution portrait of Martin Lourduraj housed in a floating frosted-glass structure with dual orbital energy rings (clockwise blue ring, counterclockwise crimson ring), floating holographic technology badges, ambient backlighting, and 3D cursor perspective tilt.
-- **Multiple Row-Wise Animation System:** Six independent, smooth animated horizontal rows:
-  - **ROW 1 — Frontend Technologies Marquee:** Smooth continuous scrolling (right to left) for React 18, TypeScript, JavaScript ESNext, Tailwind CSS, HTML5, CSS3 3D, Vite, Remix.
-  - **ROW 2 — Backend & Database Marquee:** Smooth continuous scrolling (left to right) for Python 3, Django ERP, PostgreSQL, MySQL, REST APIs, Redis, Celery, Node.js.
-  - **ROW 3 — Cloud & DevOps Marquee:** Slow continuous scrolling (right to left) for AWS Cloud, Linux Systems, Docker Containers, Vercel Edge, Git, GitHub Actions, Nginx.
-  - **ROW 4 — Featured Projects Horizontal Carousel:** Wide project cards with drag-to-scroll, touch swipe, keyboard navigation, previous/next controls, and interactive HUD detail modals. Features CSVS Nova HMS, medical_erp2, DoctoHub, remix-of-gen-tech-hub, and CSVS Automation & Nova AI.
-  - **ROW 5 — Architectural Specializations:** 6 animated transparent cards with alternating entrance animations and floating motion covering Full-Stack Development, Healthcare ERP, Enterprise Architecture, Cloud Infrastructure, Automation, and Software Engineering.
-  - **ROW 6 — Professional Journey Horizontal Timeline:** Verified professional milestones connected with animated laser lines, glowing node indicators, and staggered reveal transitions.
-- **Dynamic 4-Theme Engine:**
-  1. `Blue × Red Fusion` (Default HUD — Dual-Core Harmonic)
-  2. `Cyber Blue` (Electric Sapphire)
-  3. `Crimson Red` (Cyber Ruby)
-  4. `Midnight Black` (Stealth Obsidian Void)
-  *(State seamlessly preserved in `localStorage`)*
-- **Live Indian Standard Time (IST) Clock:** Displays live time (UTC+05:30) with pulsing network activity indicator and Tamil Nadu, India location tracking.
+1. **Initial Screen — Arc Reactor Activation Lock:**
+   - Full-screen cinematic dark room with faint blue and crimson volumetric lighting.
+   - Interactive 3D Arc-Reactor-inspired power core (`ArcReactor3D.tsx`) with rotating concentric rings, segmented copper/gold magnetic coil inductors, glowing cyan center, and mouse/touch/keyboard activation.
+   - Browser audio permission flow supporting "Enable Voice & Enter" or "Enter Silently" without blocking visitors.
 
----
+2. **Original Armored AI Guardian — NOVEA:**
+   - Procedural 3D robotic guardian model (`NoveaGuardian.tsx`) with crimson and metallic red armor, gold accents, dark titanium mechanical plating, ice-blue glowing chest core, and illuminated cyan eye optics.
+   - Articulated neck with hydraulic pistons tracking cursor movement.
+   - Spoken dialogue synchronized with speech synthesis and Web Audio procedural SFX:
+     - *"Welcome to Martin's World."*
+     - *"I am NOVEA, your personal AI guide."*
+     - *"Kindly explore the world of Martin Lourduraj."*
+   - Captions HUD display bar synchronized with spoken dialogue.
 
-## 🚀 Verified Personal & Enterprise Data
+3. **Nanotech Suit-Up Protocol (`SuitAssembly.tsx`):**
+   - **Stage A — Energy Release:** Circular thermal shockwave.
+   - **Stage B — Particle Dispersion:** Thousands of cyan, electric blue, silver, and crimson nanotech particles (`NanoParticles.tsx`).
+   - **Stage C — Mechanical Assembly:** Particles converge into geometric lattice armor structures.
+   - **Stage D — Holographic Construction:** Glowing laser wireframes trace the navbar, portrait frame, and cards.
+   - **Stage E — Glass Materialization:** Shimmering liquid frosted glass panels materialize.
+   - **Stage F & G — System Online Reveal:** Smooth transition into the full Cyber Glass portfolio with `MARTIN'S WORLD // SYSTEM ONLINE // WELCOME, EXPLORER`.
 
-- **Name:** Martin Lourduraj
-- **Professional Title:** Founder & Full-Stack Architect
-- **Startup:** CSVS IT Tech ([csvsittech.in](https://csvsittech.in))
-- **Direct Enterprise Email:** `contact@csvsittech.in`
-- **Location:** Tamil Nadu, India (Global Cloud Operations)
-- **GitHub Profile:** [@MartinLourduraj](https://github.com/MartinLourduraj)
-- **Verified Public Repositories:**
-  - [`medical_erp2`](https://github.com/MartinLourduraj/medical_erp2) — Hospital ERP handling OP, IP, Clinical Labs, Pharmacy, and Diagnostic Billing
-  - [`DoctoHub`](https://github.com/MartinLourduraj/DoctoHub) — Doctor-Patient Clinical Social Network and appointment management suite
-  - [`remix-of-gen-tech-hub`](https://github.com/MartinLourduraj/remix-of-gen-tech-hub) — Next-Gen Healthcare & Hospital Management Platform
-  - **CSVS Nova HMS** — Flagship Enterprise Hospital Management & Laboratory Automation Suite (100% Data Sovereignty)
+4. **Permanent NOVEA AI Future Access Key (`NoveaFutureKey.tsx`):**
+   - Floating metallic glass orb in the bottom-right corner with orbiting energy rings and active pulse indicator.
+   - Opens futuristic assistant panel with status: `NOVEA AI — COMING SOON`.
+   - Operational navigation controls to jump to Projects, About, CSVS IT Tech, Contact, Mute/Unmute voice, and "Reactivate NOVEA" to replay the cinematic sequence.
+   - Modular backend contracts established in `src/ai/`: `INoveaChatProvider`, `INoveaVoiceProvider`, `INoveaActionsProvider`, `INoveaMemoryProvider`.
+
+5. **Complete Preservation of All V2.0 Sections & Features:**
+   - Personal real portrait component with dual orbital energy rings.
+   - All 6 animated rows (Frontend marquee, Backend marquee, Cloud/DevOps marquee, Featured Projects carousel, 6 Specializations, Professional Journey timeline).
+   - 4-Theme engine (Blue × Red Fusion, Cyber Blue, Crimson Red, Midnight Black).
+   - Live Indian Standard Time (IST) clock.
+   - Verified hospital ERP platforms (CSVS Nova HMS, medical_erp2, DoctoHub, remix-of-gen-tech-hub).
+   - Verified serverless contact terminal (`/api/contact`).
 
 ---
 
 ## 🛠️ Technology Stack
 
 - **Framework:** React 18 & TypeScript (Strict static typing)
-- **Bundler:** Vite 5 (Ultra-fast HMR and optimized tree-shaking)
+- **3D Graphics & VFX:** Three.js + WebGL procedural shaders & canvas textures
+- **Animation:** CSS3 Hardware Accelerated 3D Matrix Transforms + GSAP
+- **Audio:** Web Audio API (procedural synthesis) + Web SpeechSynthesis API
+- **Bundler:** Vite 5 (chunk-split with manual vendor chunks for Three.js)
 - **Styling:** Tailwind CSS with custom glassmorphism utilities & cyber borders
-- **Motion & 3D:** Interactive HTML5 2D Canvas aurora wave simulator + CSS 3D perspective tilt & matrix transforms
-- **Icons:** Lucide React + custom cyber SVG icons
-- **Deployment Target:** Vercel (Production configuration with `vercel.json` headers and serverless `/api/contact` function)
+- **Deployment Target:** Vercel (Production configuration with `vercel.json` and serverless `/api/contact`)
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Architecture
 
 ```
 csvs-cyber-glass-portfolio/
 ├── api/
-│   └── contact.ts                       # Vercel serverless contact function with spam honeypot
+│   └── contact.ts                       # Serverless contact delivery function
+├── docs/
+│   └── NOVEA_AI_BACKEND.md              # Future serverless AI architecture spec
 ├── public/
-│   ├── favicon.svg                      # Futuristic hexagonal cyber glass favicon
+│   ├── favicon.svg                      # Futuristic cyber glass favicon
 │   ├── images/
-│   │   ├── martin-lourduraj.webp        # Official professional portrait (WebP format)
-│   │   ├── martin-lourduraj.png         # Official professional portrait (PNG fallback)
+│   │   ├── martin-lourduraj.webp        # Official professional portrait
+│   │   ├── martin-lourduraj.png         # Fallback portrait
 │   │   └── github-avatar.png            # Verified GitHub avatar source
-│   ├── og-image.png                     # OpenGraph social sharing card
 │   ├── robots.txt                       # Search engine crawler policies
 │   └── sitemap.xml                      # Production XML sitemap
 ├── src/
-│   ├── components/                      # Reusable UI & HUD components
-│   │   ├── AnimatedCounter.tsx          # Scroll-triggered count up statistics
-│   │   ├── CyberBackground.tsx          # Dual-core blue/crimson fluid canvas waves
-│   │   ├── CyberHUDModal.tsx            # Glass HUD dialog for specifications & CV
-│   │   ├── FeaturedProjectsRow.tsx      # ROW 4: Wide project cards horizontal drag/scroll
-│   │   ├── GithubIcon.tsx               # SVG GitHub icon
-│   │   ├── GlassCard.tsx                # Liquid glass container with gradient borders
+│   ├── ai/                              # Modular future AI expansion contracts
+│   │   ├── NoveaActionsProvider.ts      # Deterministic UI navigation provider
+│   │   ├── NoveaChatProvider.ts         # Secure server-side chat provider stub
+│   │   ├── NoveaMemoryProvider.ts       # Privacy-first local memory provider
+│   │   └── NoveaVoiceProvider.ts        # Voice synthesis & STT provider
+│   ├── components/
+│   │   ├── cinematic/                   # V3.0 Superhero Nanotech & 3D Components
+│   │   │   ├── ArcReactor3D.tsx         # 3D procedural Arc Reactor with rotating rings
+│   │   │   ├── CinematicIntro.tsx       # Fullscreen locked intro stage & voice sequence
+│   │   │   ├── IntroAudioController.tsx # Procedural Web Audio SFX & SpeechSynthesis
+│   │   │   ├── NanoParticles.tsx        # GPU-optimized particle burst & lattice storm
+│   │   │   ├── NoveaGuardian.tsx        # Original 3D armored robotic AI guardian
+│   │   │   ├── PortfolioReveal.tsx      # Smooth transition container for portfolio
+│   │   │   └── SuitAssembly.tsx         # Full-screen Nano Suit Protocol transition
+│   │   ├── novea/
+│   │   │   ├── NoveaFutureKey.tsx       # Floating metallic orb access button
+│   │   │   └── NoveaAIModal.tsx         # Futuristic assistant panel modal
+│   │   ├── FeaturedProjectsRow.tsx      # ROW 4: Wide project cards horizontal slider
 │   │   ├── HorizontalJourneyTimeline.tsx# ROW 6: Horizontal professional timeline
-│   │   ├── ISTClock.tsx                 # Live Indian Standard Time badge
-│   │   ├── MagneticButton.tsx           # Cursor-pulling interactive button
-│   │   ├── Marquee.tsx                  # Accessible infinite scrolling marquee
-│   │   ├── Navbar.tsx                   # Floating transparent glass navigation
+│   │   ├── Marquee.tsx                  # ROWS 1, 2, 3: Continuous flowing tech marquees
+│   │   ├── Navbar.tsx                   # Floating glass navigation + Reactivate NOVEA
 │   │   ├── PersonalPhoto.tsx            # Dedicated portrait with dual orbital rings
-│   │   ├── SectionHeader.tsx            # HUD section badge, title & laser divider
 │   │   ├── SpecializationsRow.tsx       # ROW 5: 6 animated specialization cards
-│   │   ├── TechnologyRibbon.tsx         # Multi-layer ribbon (ROWS 1, 2, 3)
-│   │   ├── ThemeToggle.tsx              # 4-theme engine switcher dropdown
-│   │   └── TiltCard.tsx                 # 3D perspective mouse tilt with dynamic glare
-│   ├── data/
-│   │   └── portfolioData.ts             # Centralized single source of truth for all data
-│   ├── hooks/
-│   │   ├── useActiveSection.ts          # Scrollspy active section indicator
-│   │   ├── useISTTime.ts                # Live Indian Standard Time clock hook
-│   │   ├── useReducedMotion.ts          # Accessibility prefers-reduced-motion hook
-│   │   └── useTheme.ts                  # Theme engine state & localStorage sync
-│   ├── sections/
-│   │   ├── HeroSection.tsx              # Fullscreen cinematic hero with photo & ribbon
-│   │   ├── AboutSection.tsx             # Premium 4-card glass bento grid with portrait
-│   │   ├── SkillsSection.tsx            # Interactive tech arsenal with category filters
-│   │   ├── ProjectsSection.tsx          # Verified project cards with screenshot carousels
-│   │   ├── GitHubSection.tsx            # Live GitHub repositories & fallback cache
-│   │   ├── ExperienceSection.tsx        # Chronological timeline with glowing nodes
-│   │   ├── CSVSStartupSection.tsx       # "Building Tomorrow with CSVS IT Tech" showcase
-│   │   ├── AchievementsSection.tsx      # Verified governance & architecture badges
-│   │   ├── ContactSection.tsx           # Direct verified glass contact terminal
-│   │   └── Footer.tsx                   # Animated glass footer with back-to-top
+│   │   ├── TechnologyRibbon.tsx         # Flowing technology ribbon (Rows 1, 2, 3)
+│   │   └── ThemeToggle.tsx              # 4-theme engine switcher dropdown
+│   ├── sections/                        # Existing core portfolio sections
 │   ├── styles/
 │   │   └── index.css                    # Tailwind base, utilities, cyber glass styles
-│   ├── types/
-│   │   └── index.ts                     # Strict TypeScript interfaces
-│   ├── App.tsx                          # Root React component
+│   ├── App.tsx                          # Root React component managing intro & reveal
 │   └── main.tsx                         # Vite application entry point
-├── .env.example                         # Non-secret environment variable template
-├── package.json                         # Dependencies & build scripts
-├── tailwind.config.js                   # Tailwind theme tokens & animations
-├── tsconfig.json                        # TypeScript strict compiler options
-├── vercel.json                          # Vercel deployment rewrites & security headers
-└── vite.config.ts                       # Vite configuration
+├── package.json                         # Dependencies (Three.js, GSAP, Lucide, Tailwind)
+├── tailwind.config.js                   # Theme tokens, custom animations, keyframes
+├── tsconfig.json                        # Strict TypeScript compiler options
+├── vercel.json                          # Security headers & SPA rewrites
+└── vite.config.ts                       # Chunk-splitting configuration
 ```
-
----
-
-## 🖼️ How to Replace the Portrait Image
-
-The portrait is decoupled and simple to update:
-1. Replace `public/images/martin-lourduraj.webp` (or `martin-lourduraj.png`) with your updated portrait.
-2. If using a different file name, update `photoUrl` in `src/data/portfolioData.ts`:
-   ```ts
-   export const PERSONAL_INFO = {
-     ...
-     photoUrl: "/images/your-new-photo.webp",
-   };
-   ```
 
 ---
 
@@ -153,24 +124,15 @@ The portrait is decoupled and simple to update:
 # Install dependencies
 npm install
 
-# Start local development server
+# Run development server
 npm run dev
 
-# Run TypeScript checks and production build
+# Compile TypeScript and build for production
 npm run build
 
 # Preview production build locally
 npm run preview
 ```
-
----
-
-## 🔒 Security & Performance Features
-
-- **Strict Content Security & HTTP Headers:** Configured in `vercel.json` with `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, and `Strict-Transport-Security`.
-- **Anti-Spam Contact Terminal:** Built-in honeypot trap preventing bot submissions without user friction.
-- **Reduced Motion Support:** Respects user's `prefers-reduced-motion` operating system preferences.
-- **Screen Reader Accessible:** Duplicated marquee elements are marked with `aria-hidden="true"`.
 
 ---
 
